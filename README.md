@@ -140,6 +140,23 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/iter/cumax`][@stdlib/stats/iter/cumax]: create an iterator which iteratively computes a cumulative maximum value.
+-   [`@stdlib/stats/iter/cumean`][@stdlib/stats/iter/cumean]: create an iterator which iteratively computes a cumulative arithmetic mean.
+-   [`@stdlib/stats/iter/cumin`][@stdlib/stats/iter/cumin]: create an iterator which iteratively computes a cumulative minimum value.
+-   [`@stdlib/stats/iter/range`][@stdlib/stats/iter/range]: compute the range of all iterated values.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -200,6 +217,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [range]: https://en.wikipedia.org/wiki/Range_%28statistics%29
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
+
+<!-- <related-links> -->
+
+[@stdlib/stats/iter/cumax]: https://github.com/stdlib-js/stats-iter-cumax
+
+[@stdlib/stats/iter/cumean]: https://github.com/stdlib-js/stats-iter-cumean
+
+[@stdlib/stats/iter/cumin]: https://github.com/stdlib-js/stats-iter-cumin
+
+[@stdlib/stats/iter/range]: https://github.com/stdlib-js/stats-iter-range
+
+<!-- </related-links> -->
 
 </section>
 
