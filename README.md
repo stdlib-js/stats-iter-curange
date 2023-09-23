@@ -52,6 +52,11 @@ The [**range**][range] is defined as the difference between the maximum and mini
 ## Usage
 
 ```javascript
+import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curange@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-curange/tags). For example,
+
+```javascript
 import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curange@v0.1.0-esm/index.mjs';
 ```
 
@@ -112,7 +117,7 @@ r = it.next().value;
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curange@v0.1.0-esm/index.mjs';
+import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curange@esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
