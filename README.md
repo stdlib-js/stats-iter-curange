@@ -45,19 +45,30 @@ The [**range**][range] is defined as the difference between the maximum and mini
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-curange
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curange@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-curange/tags). For example,
-
-```javascript
-import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curange@v0.1.1-esm/index.mjs';
+var itercurange = require( '@stdlib/stats-iter-curange' );
 ```
 
 #### itercurange( iterator )
@@ -65,7 +76,7 @@ import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curang
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes a cumulative range.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0, -7.0, -5.0 ] );
 var it = itercurange( arr );
@@ -110,14 +121,9 @@ r = it.next().value;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itercurange from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-curange@esm/index.mjs';
+```javascript
+var runif = require( '@stdlib/random-iter-uniform' );
+var itercurange = require( '@stdlib/stats-iter-curange' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -139,10 +145,6 @@ while ( true ) {
         break;
     }
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -183,7 +185,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -213,8 +215,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-iter-curange.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-iter-curange
 
-[test-image]: https://github.com/stdlib-js/stats-iter-curange/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/stats-iter-curange/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/stats-iter-curange/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-iter-curange/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-iter-curange/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-iter-curange?branch=main
@@ -249,13 +251,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/cumax]: https://github.com/stdlib-js/stats-iter-cumax/tree/esm
+[@stdlib/stats/iter/cumax]: https://github.com/stdlib-js/stats-iter-cumax
 
-[@stdlib/stats/iter/cumean]: https://github.com/stdlib-js/stats-iter-cumean/tree/esm
+[@stdlib/stats/iter/cumean]: https://github.com/stdlib-js/stats-iter-cumean
 
-[@stdlib/stats/iter/cumin]: https://github.com/stdlib-js/stats-iter-cumin/tree/esm
+[@stdlib/stats/iter/cumin]: https://github.com/stdlib-js/stats-iter-cumin
 
-[@stdlib/stats/iter/range]: https://github.com/stdlib-js/stats-iter-range/tree/esm
+[@stdlib/stats/iter/range]: https://github.com/stdlib-js/stats-iter-range
 
 <!-- </related-links> -->
 
